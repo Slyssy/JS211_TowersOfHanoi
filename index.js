@@ -33,7 +33,7 @@ const pickUpStone = (rowID) => {
   // console.log(stone);
 };
 
-// # Function to drop the stone. This is done by selecting the row where the stone needs to be dropped and verifying if there is currently anything in that row. If so, we need to make sure that the existing stone is larger than the stone we want to replace.
+// # Function to drop the stone. This is done by selecting the row where the stone needs to be dropped and verifying if there is currently anything in that row. If so, we need to make sure that the existing stone is larger than the stone we want to drop.
 const dropStone = (rowID, stone) => {
   const movesCounter = document.querySelector('.move-counter');
   const selectedRow = document.getElementById(rowID);
@@ -80,6 +80,8 @@ const toggleFunction = (row, stone) => {
 // # We are checking for win by counting the number of child elements. Once child elements equal 4, the game is won.
 const checkForWin = (row) => {
   if (row.childElementCount === 4) {
+    // #Adding the active class to the "announce-game-won" element to make the
+    // #message visible.
     document.querySelector('.announce-game-won').classList.add('active');
   }
 };

@@ -8,7 +8,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-// An object that represents the three stacks of Towers of Hanoi;
+// ?An object that represents the three stacks of Towers of Hanoi;
 // * each key is an array of Numbers:
 // * A is the far-left,
 // * B is the middle,
@@ -64,7 +64,7 @@ const isLegal = (startStack, endStack) => {
   return true;
 };
 
-// What is a win in Towers of Hanoi? When should this function run?
+// ?What is a win in Towers of Hanoi? When should this function run?
 const checkForWin = () => {
   // # If the array length of stacks b or c is 4, you win.
   if (stacks.b.length === 4 || stacks.c.length === 4) {
@@ -72,13 +72,13 @@ const checkForWin = () => {
   } else return false;
 };
 
-// When is this function called? What should it do with its argument?
+// ?When is this function called? What should it do with its argument?
 const towersOfHanoi = (startStack, endStack) => {
   // Your code here
   //@ set variables
   //@ Check to see if isLegal(start, end)
   //@ if true run movePiece() if not run the invalid console.log
-  // check for win
+  //@ check for win
   // #Creating variables to identify the start and end stacks.
   let start = startStack;
   let end = endStack;

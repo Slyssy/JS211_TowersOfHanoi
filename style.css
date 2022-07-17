@@ -100,7 +100,7 @@ h1 {
   top: 15%;
   left: 50%;
   transform: translateX(-50%);
-  /* display: none; */
+  display: none;
 }
 
 .move-counter {
